@@ -1,20 +1,14 @@
 #!name=iOS Cookies Module
-#!desc=iOS Cookies 模块配置 更新于2022-02-25
+#!desc=iOS Cookies 模块配置 Updated on 2022-03-01
 
 [Script]
 # Chavy  (apiwz.midukanshu.com, api.1sapp.com, frodo.douban.com, luckman.suning.com, passport.suning.com, sign.suning.com, gameapi.suning.com, m.ctrip.com, 110.43.90.61, zt.wps.cn, m-bean.kaola.com, daojia.jd.com, app.nio.com, wxprdapplet.gac-nio.com, node.kg.qq.com, api.dushu.io, pm.m.fenqile.com, maicai.api.ddxq.mobi, group.baicizhan.com, api.everphoto.cn, i.meituan.com, promotion.waimai.meituan.com, wx.10086.cn, www.maomicd.com, m.client.10010.com, act.10010.com, api-takumi.mihoyo.com, m.gdoil.cn, credits.bz.mgtv.com, *.csdn.net, wapside.189.cn, *.acfun.cn, apk.tw, *.bilibili.com, api.dongqiudi.com, *.feng.com, www.flyertea.com, music.163.com, *.m.163.com, user.qunar.com, *.rr.tv, sf-integral-sign-in.weixinjia.net, mcs-mimp-web.sf-express.com, *.smzdm.com, tieba.baidu.com, *.v2ex.com, *.video.qq.com, mobwsa.ximalaya.com, *.you.163.com, *.rrys2020.com, ios.zmzapi.com）
 http-request ^https?:\/\/tieba\.baidu\.com\/?.? script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/tieba/tieba.cookie.js, tag=百度签到(网页)
-http-request ^https:\/\/music.163.com\/weapi\/user\/level script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.cookie.js, requires-body=true, tag=网易云音乐
 http-request ^https:\/\/(www|live)\.bilibili\.com\/?.? script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.cookie.js, tag=哔哩哔哩
-http-request ^https?:\/\/act.10010.com\/SigninApp\/signin\/querySigninActivity.htm script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.cookie.js, tag=中国联通
-http-request ^https?:\/\/act.10010.com\/SigninApp(.*?)\/signin\/daySign script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.cookie.js, tag=中国联通
-http-request ^https?:\/\/m.client.10010.com\/dailylottery\/static\/(textdl\/userLogin|active\/findActivityInfo) script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.cookie.js, tag=中国联通
 http-request ^https:\/\/promotion.waimai.meituan.com\/playcenter\/signIn\/entry script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wmmeituan/wmmeituan.cookie.js, tag=美团外卖
 http-request ^https:\/\/promotion.waimai.meituan.com\/playcenter\/signIn\/doaction script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wmmeituan/wmmeituan.cookie.js, requires-body=true,  tag=美团外卖
 http-request ^https:\/\/i.meituan.com\/evolve\/signin\/signpost\/ script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.cookie.js, requires-body=true, tag=美团
 http-request ^https:\/\/m-bean\.kaola\.com/m/point/sign\.html script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wykl/wykl.cookie.js, requires-body=true, tag=网易考拉
-http-request ^https:\/\/zt.wps.cn\/2018\/docer_check_in\/api\/act_list script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wps/wps.cookie.js, tag=WPS
-http-request ^https:\/\/sapi\.beingfine\.cn\/v3\/bb\/reward\/by-sign-in script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/bubei/bubei.js, tag=不背单词
 
 # Nobyda  (ifac*.iqiyi.com, www.52pojie.cn, api.m.jd.com, passport.biligame.com, c.tieba.baidu.com, api.kkmh.com)
 获取京东Cookie = type=http-request,requires-body=1,pattern=^https:\/\/(api\.m|me-api|ms\.jr)\.jd\.com\/(client\.action\?functionId=signBean|user_new\/info\/GetJDUserInfoUnion\?|gw\/generic\/hy\/h5\/m\/appSign\?),script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
@@ -46,9 +40,6 @@ http-request https:\/\/wq\.jd\.com\/user_new\/info\/GetJDUserInfoUnion tag=多�
 http-request ^https:\/\/jdread-api\.jd\.com\/* script-path=https://raw.githubusercontent.com/XidNDD/2020scripts/master/jddsSign.js, requires-body=true, tag=京东读书签到
 http-request ^https:\/\/choujiang-server\.deering\.cn\/* script-path=https://raw.githubusercontent.com/XidNDD/2020scripts/master/qkylck.js, requires-body=true, tag=趣客有礼小程序
 
-# iisams  (api.m.jd.com)
-http-request https:\/\/api\.m\.jd\.com\/api\/v1\/sign\/doSign script-path=https://raw.githubusercontent.com/iisams/Scripts/master/liwo/7dayscookie.js, requires-body=true, tag=梨涡签到领现金Cookie
-
 # LJJJia  (shop42867343.youzan.com)
 http-request ^https:\/\/shop42867343\.youzan\.com\/wscump\/checkin\/checkin\.json script-path=https://raw.githubusercontent.com/LJJJia/script/master/iklear/iklear_cookie.js, requires-body=true, tag=iklear_cookie
 
@@ -59,18 +50,9 @@ http-request https:\/\/weibo\.com\/p\/aj\/general\/button\?ajwvr=6&api=http:\/\/
 http-request ^https:\/\/h5\.ele\.me\/restapi\/eus\/v\d\/current_user$ script-path=https://raw.githubusercontent.com/songyangzz/QuantumultX/master/elem/elemGetCookies.js, tag=elem
 
 # 红鲤鱼与绿鲤鱼与驴  (mk.immomo.com,mobile01.91quzou.com,appv8.qukantianxia.com,appv7.qukantx.com,m.client.10010.com,m.weibo.cn)
-http-request https:\/\/m.client\.10010\.com\/mobileService\/home\/queryUserInfoSeven\.htm? script-path=https://raw.githubusercontent.com/wangdelu2020/hongliyu/master/liantongnotice.js, requires-body=true, timeout=30, tag=联通流量话费提醒
 http-request https:\/\/m\.weibo\.cn\/api\/config script-path=https://raw.githubusercontent.com/wangdelu2020/hongliyu/master/newsinachaohua.js, requires-body=true, timeout=30, tag=新浪微博超话签到
 
-# iepngs (maicai.api.ddxq.mobi,studygolang.com,m.ctrip.com,sports.lifesense.com,i.snssdk.com,is.snssdk.com)
-http-request https:\/\/m\.ctrip\.com\/restapi\/soa2\/14946\/json\/userBaseInfo script-path=https://raw.githubusercontent.com/iepngs/Script/master/ctrip/index.js, tag=携程旅行
-
-# iNotification
-http-request https://weclub\.ccc\.cmbchina.com/SCRMCustomActivityFront/checkin/request/get-home-data\.json\?activityCode=checkin script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/cmbchina.js, tag=招行信用卡公众号
-
 # barrymchen  (m.ctrp.com,*.ctrp.com,m.elong.com,activity.m.duiba.com.cn,activity.m.duiba.com.cn,icbc1.wlphp.com:8444,cn.exflux.io,api.m.jd.com,daojia.jd.com，api.m.jd.com, ms.jr.id.com，wx.17u.cn)
-http-request https:\/\/m\.ctrip\.com\/restapi\/soa2\/14946\/json\/userBaseInfo script-path=https://raw.githubusercontent.com/barrym-chen/Script/master/ctrip/ctrip_cookie.js, tag=携程旅行
-http-request ^https:\/\/ms\.jr\.jd\.com\/gw\/generic\/bt\/h5\/m\/queryUserSignFlow script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/jdczfcookie.js, tag=京东成长分
 http-request ^https:\/\/wx\.17u\.cn\/wcsign\/sign\/GetSignInfo script-path=https://raw.githubusercontent.com/barrym-chen/Script/master/tongc/tongc_cookie.js, requires-body=true, tag=微信小程序-同程艺龙
 http-request ^https:\/\/m\.elong\.com\/my\/rafflemileagejson\/getRaffleMileageTodayCount script-path=https://raw.githubusercontent.com/barrym-chen/Script/master/elong/elong_draw_cookis.js, tag=elong
 http-request ^https:\/\/m\.ctrip\.com\/restapi\/soa2\/16575\/signin script-path=https://raw.githubusercontent.com/barrym-chen/Script/master/ctrip_wx/ct_cookie.js, tag=微信小程序-携程
@@ -81,9 +63,6 @@ http-request ^https:\/\/operation-api\.jimistore\.com\/* script-path=https://raw
 
 # whyour （lkyl.dianpusoft.cn）
 http-request ^https\:\/\/lkyl\.dianpusoft\.cn\/api\/user\-info\/login script-path=https://raw.githubusercontent.com/whyour/hundun/master/quanx/ddxw.cookie.js, requires-body=true, tag=京东小窝cookie
-
-# passerby-b（youhui.95516.com）
-http-request https://youhui.95516.com/newsign/public/app/index.html script-path=https://gitee.com/passerby-b/javascript/raw/master/unipay.js, requires-body=true, tag=云闪付签到
 
 [MITM]
 hostname = %APPEND% clientaccess.10086.cn,superapp.kiwa-tech.com, activity-1.m.duiba.com.cn,m.ximalaya.com,operation-api.jimistore.com, apiwz.midukanshu.com, api.1sapp.com, frodo.douban.com, luckman.suning.com, passport.suning.com, sign.suning.com, gameapi.suning.com, m.ctrip.com, 110.43.90.61, zt.wps.cn, m-bean.kaola.com, daojia.jd.com, app.nio.com, wxprdapplet.gac-nio.com, node.kg.qq.com, api.dushu.io, pm.m.fenqile.com, maicai.api.ddxq.mobi, group.baicizhan.com, api.everphoto.cn, i.meituan.com, promotion.waimai.meituan.com, wx.10086.cn, www.maomicd.com, m.client.10010.com, act.10010.com, api-takumi.mihoyo.com, m.gdoil.cn, credits.bz.mgtv.com, *.csdn.net, wapside.189.cn, *.acfun.cn, apk.tw, *.bilibili.com, api.dongqiudi.com, *.feng.com, www.flyertea.com, music.163.com, *.m.163.com, user.qunar.com, *.rr.tv, sf-integral-sign-in.weixinjia.net, mcs-mimp-web.sf-express.com, *.smzdm.com, tieba.baidu.com, *.v2ex.com, *.video.qq.com, mobwsa.ximalaya.com, *.you.163.com, *.rrys2020.com, ios.zmzapi.com,ifac*.iqiyi.com, www.52pojie.cn, api.m.jd.com, passport.biligame.com, c.tieba.baidu.com, api.kkmh.com,daojia.jd.com,nebula.kuaishou.com,draw.jdfcloud.com,e.189.cn,api.weibo.cn, pay.sc.weibo.com,api.inews.qq.com,newsapi.sina.cn,*.youth.cn, ios.baertt.com,www.mydigit.cn,h5.youzan.com,h5.youzan.com,glados.rocks,api.weibo.cn,www.baimaa.com,ph0001.hezyq.com,wq.02gk.com,we7.ivee.top,ph0001.hezyq.com,as.xiaojukeji.com,proapi.115.com,webapi.qmai.cn,teacherapi.zmlearn.com,h5.bianlifeng.com,mall.oclean.com,m.weibo.cn,api.xiaoheihe.cn,frodo.douban.com,cloud.umetrip.com,weather-data.apple.com, api.weather.com,app*.jegotrip.com.cn, task.jegotrip.com.cn,api.umer.com.cn,huiyuan.163.com,geekhub.com,cxdng.cpic.com.cn,*.xmcimg.com,api.weibo.cn,proxy.vac.qq.com,*.bilibili.com,yuba.douyu.com,qqpet.jwetech.com,api.m.jd.com, draw.jdfcloud.com, jdjoy.jd.com,www.cuuc.club,m.xiaomiyoupin.com,hongbao.youzikuaibao.com,jdread-api.jd.com,getconfig-globalapi.zymk.cn,wox2019.woxshare.com,appsmall.rtmap.com,choujiang-server.deering.cn,api.momosyb.com,*.zhuishushenqi.com,api.m.jd.com,shop42867343.youzan.com,maicai.api.ddxq.mobi,studygolang.com,m.ctrip.com,sports.lifesense.com,i.snssdk.com,is.snssdk.com,mk.immomo.com,mobile01.91quzou.com,appv8.qukantianxia.com,appv7.qukantx.com,m.client.10010.com,m.weibo.cn,weibo.com,h5.ele.me,yuba.douyu.com,m.ctrp.com,*.ctrp.com,m.elong.com,activity.m.duiba.com.cn,activity.m.duiba.com.cn,icbc1.wlphp.com:8444,cn.exflux.io,api.m.jd.com,daojia.jd.com, api.m.jd.com, ms.jr.id.com, wx.17u.cn,api.tuhu.cn,m.ctrip.com,lkyl.dianpusoft.cn, ios.baertt.com, *.youth.cn, youhui.95516.com, wapside.189.cn, mqqapi.reader.qq.com, api.cashtoutiao.com,ms.jr.jd.com, me-api.jd.com
