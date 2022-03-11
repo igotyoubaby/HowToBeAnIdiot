@@ -3,4 +3,5 @@
 #!system=ios
 
 [General]
+wifi-assist = flase
 allow-hotspot-access = true
