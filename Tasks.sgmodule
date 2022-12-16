@@ -15,9 +15,6 @@ cron "30 1 8 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scr
 cron "30 5 8 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wmmeituan/wmmeituan.js,tag= 美团外卖
 cron "40 5 8 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.js,tag=美团
 
-# Peng-YM  https://github.com/Peng-YM/QuanX/tree/master/Tasks
-cron "55 23 ? * THU" script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/epic.js, tag=EPIC
-
 # Sunert https://github.com/Sunert/Scripts/tree/master/Task
 cron "40 10 8 * * *" script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/lkyl.js, tag=来客有礼
 cron "0 11 8 * * *" script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js, tag=微博&钱包
