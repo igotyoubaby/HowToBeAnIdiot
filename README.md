@@ -1,3 +1,3 @@
 # ALL THESE SHIT ARE ONLY FOR SELF-USE
-## Collected from the internet
+## Collected from the Internet
 :)
